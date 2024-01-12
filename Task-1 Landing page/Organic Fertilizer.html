@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+        <div class="container">
+            <nav>
+                <a href="#"><img src="images/logo.jpg" class="logo"></a>
+                <h1>Oraganic Fertilizers</h1>
+                <ul>
+                    <li><a href=""class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+                <div class="article">
+                    <div class="textbox">
+                    <h1>Organic <span>Fertilizers</span></h1>
+                    <p>Organic fertilizers are the secret ingredient for a harvest<br> of high growth and vibrant abundance.</br></p>
+                    <a href="" class="btn">Shop Now</a>
+                </div>
+                <div class="imgbox">
+                    <img src="images/organic6.jpg" class="organic">
+                </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/organic6.jpg" onclick="imgSlider('images/organic6.jpg');changeCirclecolor('#017143')"></li>
+            <li><img src="images/organic2.jpg" onclick="imgSlider('images/organic2.jpg');changeCirclecolor('#7a401e')"></li>
+            <li><img src="images/organic5.jpg" onclick="imgSlider('images/organic5.jpg');changeCirclecolor('#a52a2a')"></li>
+            <li><img src="images/organic9.jpg" onclick="imgSlider('images/organic9.jpg');changeCirclecolor('#00ff00')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+        </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.organic').src = anything;
+            }
+            function changeCirclecolor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+</html>
